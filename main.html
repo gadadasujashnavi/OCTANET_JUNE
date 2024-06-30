@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>HomeHunt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HomeHunt</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Find Your Dream Home</h2>
+            <p>Your journey to a perfect home starts here.</p>
+            <button onclick="scrollToSection('listings')">View Listings</button>
+        </div>
+    </section>
+    
+
+    <section id="about">
+        <div>
+            <h2>House Hunt</h2><br>
+            <p>We provide the best house rental listings in the city, tailored to your needs.</p><br>
+            <div id="ab"> 
+                <i class="bi bi-geo-alt"></i><input type="text" id="location-search" placeholder="Search Location">
+                <input type="text" placeholder="Min-rent">
+                <input type="text" placeholder="Max-rent">
+                <button type="search">Search</button>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="listings">
+        <h2>Available Listings</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="listing">
+                    <img src="house1.png" alt="House 1" width="500" height="250">
+                    <div class="info">
+                        <p>2 Bed, 1 Bath - 4,200/month</p>
+                    </div>
+                </div>
+                <div class="listing">
+                    <img src="house2.png" alt="House 2" width="500" height="250">
+                    <div class="info">
+                        <p>3 Bed, 2 Bath - 7,800/month</p>
+                    </div>
+                </div>
+                <div class="listing">
+                    <img src="house3.png" alt="House 2" width="500" height="250">
+                    <div class="info">
+                        <p>3 Bed, 3 Bath - 9,800/month</p>
+                    </div>
+                </div>
+                <div class="listing">
+                    <img src="house4.png" alt="House 2" width="500" height="250">
+                    <div class="info">
+                        <p>3 Bed, 2 Bath - 8,800/month</p>
+                    </div>
+                </div>
+                <div class="listing">
+                    <img src="house5.png" alt="House 2" width="500" height="250">
+                    <div class="info">
+                        <p>1 Bed, 1 Bath - 2,800/month</p>
+                    </div>
+                </div>
+                <!-- Add more listings as needed -->
+            </div>
+            <button class="carousel-button prev">‹</button>
+            <button class="carousel-button next">›</button>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
+    <section id="links">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-google"></i></a>
+    </section>
+    <footer>
+        <p>&copy; 2024 HomeHunt. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
